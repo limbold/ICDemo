@@ -15,7 +15,14 @@ AMyActor::AMyActor()
 void AMyActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(
+			-1,
+			10.f,
+			FColor::Green,
+			FString(TEXT("测试")));
+	}
 }
 
 // Called every frame
