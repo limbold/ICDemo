@@ -23,6 +23,7 @@ void AMyActor::BeginPlay()
 			FColor::Green,
 			FString(TEXT("测试")));
 	}
+	//测试上传
 }
 
 // Called every frame
